@@ -29,10 +29,10 @@ public class SubstringFinder {
     }
 
     //check middle of substring
-    private boolean checkSubstring(char[] chars, char[] substring, int end) {
+    private boolean checkSubstring(char[] source, char[] substring, int end) {
         int start = end - substring.length + 1;
         for (int i = 0; i < substring.length; i++) {
-            if (chars[i + start] != substring[i]) {
+            if (source[i + start] != substring[i]) {
                 return false;
             }
         }
